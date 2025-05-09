@@ -35,7 +35,7 @@ VisQA is a multimodal application that allows users to ask questions about image
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/VisQA.git
+   git clone https://github.com/saadsohail05/VisQA.git
    cd VisQA
    ```
 
