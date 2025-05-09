@@ -1,0 +1,9 @@
+# Add your project dependencies here
+groq>=0.4.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+# replicate>=0.22.0 # Commented out as it does not seem to be used by qa.py, asr.py, or tts.py
+gTTS>=2.2.3 # Added gTTS for text-to-speech
+streamlit
+streamlit-audiorec # Corrected package name
+Pillow
