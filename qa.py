@@ -2,11 +2,14 @@ import os
 import requests
 import base64
 from dotenv import load_dotenv
+import streamlit as st
 
+# Load from .env file for local development
 load_dotenv()
 
 NVIDIA_API_ENDPOINT = "https://ai.api.nvidia.com/v1/vlm/microsoft/kosmos-2"
-NVIDIA_API_KEY = os.getenv('NVIDIA_API_KEY')
+# Try to get API key from Streamlit secrets first, fall back to environment variables
+NVIDIA_API_KEY = st.secrets.get("NVIDIA_API_KEY", os.getenv('NVIDIA_API_KEY'))
 
 
 def process_image(image_path, question):
